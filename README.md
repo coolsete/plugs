@@ -19,9 +19,9 @@ the cover art is found in Cover Art Archive.
 >http://{host}:8080/api/v1/artists/{mbid}
 
 ## Functional requirements in nutshell:
--"Music app" provides informational from different sources, which have different load capacity (request per seconds) or redirects. 
+"Music app" provides informational from different sources, which have different load capacity (request per seconds) or redirects. 
 Final response should be combined by several big json responses with strict order.
-## How it's implemented
+## How it's implemented.
 It was implemented as POC.
 There is a spring boot application, which uses reactive WebClient to get information from third-party services.
 All clients return Mono objects. Reactive objects are able to provide load limitations and async responses, which can be handled, 
