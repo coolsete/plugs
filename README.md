@@ -39,3 +39,9 @@ We had no requirement to use a cache in our solution.
 <img src="highleveldesign2.jpg">
 
 If we used a cache in our solution, we would provide for users better response time. 
+
+## Notice
+If you face with in build time "Errors:
+[ERROR]   ArtistsControllerTest.artistsControllerShouldProvidesInformationAboutArtistJohnWilliams:71 ? IllegalState Timeout on blocking read for 5000000000 NANOSECONDS"
+Please just repeat the build. 
+I've seen the problem just in test one time.
